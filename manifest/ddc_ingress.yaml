@@ -1,0 +1,16 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ddc-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host: prod.actuar-azure-nginx.unx.sas.com
+      http:
+        paths:
+          - backend:
+              serviceName: ddc-service
+              servicePort: 3000
+            path: /ddc
