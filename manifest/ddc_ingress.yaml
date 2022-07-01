@@ -12,5 +12,5 @@ spec:
         paths:
           - backend:
               serviceName: ddc-service
-              servicePort: 3000
+              servicePort: 4000
             path: /ddc

@@ -40,7 +40,7 @@ spec:
           securityContext:
             runAsUser: 1000
           ports:
-            - containerPort: 3000
+            - containerPort: 4000
               name: ddc
           resources:
             limits:
@@ -68,8 +68,8 @@ metadata:
 spec:
   ports:
     - name: ddc-port
-      port: 3000
-      targetPort: 3000
+      port: 4000
+      targetPort: 4000
       protocol: TCP
   selector:
     app: ddc-server
