@@ -24,6 +24,7 @@ app.use(config.baseUrl + '/javascripts/jquery', express.static(path.join(__dirna
 app.use(config.baseUrl + '/javascripts/popper', express.static(path.join(__dirname, '/node_modules/popper.js/dist'))); // redirect Popper JS
 app.use(config.baseUrl + '/javascripts/sas', express.static(path.join(__dirname, '/libs')));
 app.use(config.baseUrl + '/stylesheets/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css'))); // redirect CSS bootstrap
+app.use(config.baseUrl + '/graphs', express.static('/mnt/viya-share/graphs'));
 
 app.use(config.baseUrl, indexRouter);
 
